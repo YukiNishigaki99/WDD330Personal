@@ -1,0 +1,33 @@
+Proposals for personal web application
+1.	Purpose
+Create recipe application
+
+2.	Audience
+Everyone who likes cooking
+
+3.	Data sources
+Dammy JSON data file
+https://github.com/Ovi/DummyJSON/blob/master/database/recipes.json
+
+4.	Initial Module list
+utils.mjs
+menuList.mjs
+menuDetails.mjs
+myList.mjs
+auth.mjs
+
+5.	Wireframes for each view of your application
+https://app.visily.ai/projects/f0ba0e57-dfd0-4f5b-9141-827b33b93525/boards/1027098
+
+6.	Colors/Typography/specific Element styling
+Color scheme:
+https://coolors.co/ffd289-facc6b-ffd131-f5b82e-f4ac32
+Typography: Helvetica or other sans-serif fonts
+
+7.	Schedule to provide yourself mile-markers along the way to help you stay on target.
+Week 10 Make a new node project and build an application foundation
+Week 11 Implement menu list, details, and my favorite recipe list functions
+Week 12 Implement authentication (login) function
+Week 13 Organize website design
+Week 14 Project submission
+
