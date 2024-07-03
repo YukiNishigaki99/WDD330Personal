@@ -31,3 +31,15 @@ Week 12 Implement authentication (login) function
 Week 13 Organize website design
 Week 14 Project submission
 
+
+------------------------------------------------------------------------
+Memo
+------------------------------------------------------------------------
+cuisine:
+Italian, Asian, American, Mexican, Mediterranean, Pakistani, 
+Japanese, Moroccan, Korean, Greek, 
+
+difficulty:
+Easy, Medium, 
+
+checked until line 808, menuid 20.
