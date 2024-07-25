@@ -1,9 +1,9 @@
 // wrpper for querySelector...returns matching element
-export function qs(selector, parent = document) {
-    return parent.querySelector(selector);
-}
+// export function qs(selector, parent = document) {
+//     return parent.querySelector(selector);
+// }
 // or a more concise version if you are into that sort of thing:
-// export const qs = (selector, parent = document) => parent.querySelector(selector);
+export const qs = (selector, parent = document) => parent.querySelector(selector);
 
 // retrieve data from localstorage
 export function getLocalStorage(key) {
@@ -22,6 +22,7 @@ export function setClick(selector, callback) {
     qs(selector).addEventListener("click", callback);
 }
 
+// Returns parameters from URL
 export function getParam(param) {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
@@ -62,10 +63,13 @@ function loadTemplate(path) {
 }
 
 export async function loadHeaderFooter() {
-    const headerTemplateFn = loadTemplate("partials/header.html");
-    const footerTemplateFn = loadTemplate("/partials/footer.html");
-    const headerEl = document.querySelector("#main-header");
-    const footerEl = document.querySelector("#main-footer");
+    const
+        headerTemplateFn = loadTemplate("/partials/header.html"),
+        headerEl = qs("#main-header");
     renderWithTemplate(headerTemplateFn, headerEl);
+
+    const
+        footerTemplateFn = loadTemplate("/partials/footer.html"),
+        footerEl = qs("#main-footer");
     renderWithTemplate(footerTemplateFn, footerEl);
 }

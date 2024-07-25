@@ -21,6 +21,8 @@ https://app.visily.ai/projects/f0ba0e57-dfd0-4f5b-9141-827b33b93525/boards/10270
 
 6.	Colors/Typography/specific Element styling
 Color scheme:
+https://coolors.co/4a4063-bfacc8-c8c6d7-783f8e-4f1271
+
 https://coolors.co/ffd289-facc6b-ffd131-f5b82e-f4ac32
 Typography: Helvetica or other sans-serif fonts
 
@@ -35,6 +37,17 @@ Week 14 Project submission
 ------------------------------------------------------------------------
 Memo
 ------------------------------------------------------------------------
+API list:
+https://github.com/public-api-lists/public-api-lists?tab=readme-ov-file#food--drink
+
+https://developer.edamam.com//admin/applications/1409624721273
+https://api.edamam.com/doc/open-api/recipe-search-v2.json
+https://developer.edamam.com/edamam-docs-recipe-api
+
+
+
+
+
 cuisine:
 Italian, Asian, American, Mexican, Mediterranean, Pakistani, 
 Japanese, Moroccan, Korean, Greek, 
