@@ -24,9 +24,11 @@ export function setClick(selector, callback) {
 
 // Returns parameters from URL
 export function getParam(param) {
-    const queryString = window.location.search;
-    const urlParams = new URLSearchParams(queryString);
-    return urlParams.get(param);
+    const
+        queryString = window.location.search,
+        urlParams = new URLSearchParams(queryString),
+        menu = urlParams.get(param);
+    return menu;
 }
 
 export function renderListWithTemplate(
@@ -40,16 +42,16 @@ export function renderListWithTemplate(
 }
 
 export async function renderWithTemplate(
-    templateFn, parentElement, list, position = "afterbegin", clear = true
+    templateFn, parentElement, data, list, position = "afterbegin", clear = true
 ) {
     if (clear) {
         parentElement.innerHTML = "";
     }
     const htmlString = await templateFn(data);
     parentElement.insertAdjacentHTML(position, htmlString);
-    if (callback) {
-        callback(data);
-    }
+    // if (callback) {
+    //     callback(data);
+    // }
 }
 
 function loadTemplate(path) {
@@ -64,12 +66,12 @@ function loadTemplate(path) {
 
 export async function loadHeaderFooter() {
     const
-        headerTemplateFn = loadTemplate("/partials/header.html"),
+        headerTemplateFn = loadTemplate("../public/partials/header.html"),
         headerEl = qs("#main-header");
     renderWithTemplate(headerTemplateFn, headerEl);
 
     const
-        footerTemplateFn = loadTemplate("/partials/footer.html"),
+        footerTemplateFn = loadTemplate("../public/partials/footer.html"),
         footerEl = qs("#main-footer");
     renderWithTemplate(footerTemplateFn, footerEl);
 }

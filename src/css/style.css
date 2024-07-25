@@ -4,9 +4,9 @@
     --font-body: Arial, Helvetica, sans-serif;
     --font-headline: Haettenschweiler, "Arial Narrow Bold", sans-serif;
     /* colors */
-    --primary-color: #409edd;
-    --secondary-color: #525b0f;
-    --tertiary-color: #a4b8c4;
+    --primary-color: #BFACC8;
+    --secondary-color: #783F8E;
+    --tertiary-color: #C8C6D7;
     --light-grey: #d0d0d0;
     --dark-grey: #303030;
 
@@ -35,6 +35,11 @@ header {
     justify-content: space-between;
     padding: 0.1em 1.5em;
     background-color: white;
+}
+
+header a {
+    text-decoration: none;
+    color: #BFACC8;
 }
 
 img {
